@@ -1,2 +1,3 @@
 escope.txt
-myenv/
+__pycache__/
+myenv
