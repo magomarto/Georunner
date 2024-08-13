@@ -4,14 +4,14 @@ class Georunner:
 
     def get_ip_info(ip=None):
         try:
-            if ip:
-                
+            if ip:  
                 url = f'http://ip-api.com/json/{ip}' 
+                
             else:
                 'http://ip-api.com/json/'
                 
             response = requests.get(url)
-            response.raise_for_status()  # Levanta um erro para códigos de status HTTP 4xx/5xx
+            response.raise_for_status() 
             data = response.json()
             
             if data['status'] == 'fail':
