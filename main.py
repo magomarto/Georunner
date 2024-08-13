@@ -19,7 +19,8 @@ while True:
     print("Welcome to Georunner!")
     print("-"*70)
     print("1 - Locate an IP address")
-    print("2 - Quit")
+    print("2 - Query info")
+    print("3 - Quit")
     print("-"*70)
     question = input("Choose an option :")
     print("-"*70)
@@ -30,7 +31,11 @@ while True:
         Georunner.display_ip_info(ip_info)
         break
     
-    elif question == '2':
+    if question == '2':
+        Georunner.query_description()
+        break
+    
+    elif question == '3':
         break
     
     else:
