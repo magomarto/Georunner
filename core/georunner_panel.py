@@ -1,6 +1,6 @@
 class GeorunnerPanel:
-    
-    def print_banner(): # Banner created in: https://www.asciiart.eu/text-to-ascii-art
+
+    def display_banner(): # Banner created in: https://www.asciiart.eu/text-to-ascii-art
         banner = '''
 
     _________          ________                                  
@@ -11,25 +11,17 @@ class GeorunnerPanel:
 
         '''
         print(banner)
+        print("   | API provided by: http://ip-api.com/ | Author : MagoMarto |")
+        print("-"*70)
+        print("Welcome to Georunner!")
+        print("-"*70)
+
+    def main_panel():
+        print("1 - Locate an IP address")
+        print("2 - Query info")
+        print("3 - Quit")
+        print("-"*70)
+        question = int(input("Choose an option :"))
+
+        return question
     
-    def query_description():
-        
-        print(f"| NAME         | DESCRIPTION                       |")
-        print("|--------------|-----------------------------------| ")
-        print(f"| IP:          | IP used for the query             |")
-        print(f"| Status:      | Success or fail                   |")
-        print(f"| Continent:   | Continent name                    |")
-        print(f"| Country:     | Country name                      |")
-        print(f"| Region name  | Region/state                      |")
-        print(f"| City:        | City name                         |")
-        print(f"| Zip code:    | Zip code                          |")
-        print(f"| Latitude:    | Latitude                          |")
-        print(f"| Longitude:   | Longitude                         |")
-        print(f"| Timezone:    | Timezone                          |")
-        print(f"| ISP:         | ISP name                          |")
-        print(f"| Organization | Organization name                 |")
-        print(f"| AS:          | AS number and organization        |")
-        print(f"| Mobile:      | Mobile connection                 |")
-        print(f"| Proxy:       | Proxy, VPN or Tor exit address    |")
-        print(f"| Hosting:     | Hosting, colocated or data center |")
-        print("|--------------|-----------------------------------| ")
