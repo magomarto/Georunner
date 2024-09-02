@@ -1,7 +1,7 @@
 # Georunner
 
 ## Description
-Georunner is an IP geolocation tool designed to provide accurate location data based on IP addresses. This project is currently under construction...
+Georunner is an simple IP geolocation tool designed to provide accurate location data based on IP addresses. 
 
 API provided by http://ip-api.com/
 
